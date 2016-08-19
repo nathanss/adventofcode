@@ -18,7 +18,7 @@ public class Submit {
 						return;
 				}//
 			}
-			String path = "../advent_framework/inputs/day"+userChoice+".txt";
+			String path = "inputs/day"+userChoice+".txt";
 			String input = new PuzzleInput(path).getInOneLine();
 			Challenge day = new ChallengeFactory().create(userChoice);
 			String answer = "Part1: "+day.part1(input)+"\nPart2: "+ day.part2(input);
