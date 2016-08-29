@@ -13,7 +13,7 @@ public class Circuit {
 		map = new HashMap<>();
 		this.sc = sc;
 		
-		loadSignal(code);
+		loadCode(code);
 		
 		
 	}
@@ -24,7 +24,7 @@ public class Circuit {
 		}
 	}
 	
-	public void loadSignal(String code) {
+	public void loadCode(String code) {
 		for (String signal: code.split("\n"))
 			addSignal(signal);
 	}
